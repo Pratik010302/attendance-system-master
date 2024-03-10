@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "imgUrl": "https://example.com/john.jpg",
+    "attendance": [
+      {"2024-03-06": "present"},
+     {"2024-03-13": "absent"},
+     {"2024-03-21": "present"},
+     {"2024-03-19": "present"},
+     {"2024-03-28": "present"}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "imgUrl": "https://example.com/jane.jpg",
+    "attendance": [
+      {"2024-03-01": "present"},
+     {"2024-03-10": "absent"},
+     {"2024-03-07": "present"},
+     {"2024-03-06": "present"}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "imgUrl": "https://example.com/alice.jpg",
+    "attendance": [
+      {"2024-03-01": "present"},
+     {"2024-03-12": "absent"},
+     {"2024-03-07": "present"},
+     {"2024-03-06": "present"}
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bob Brown",
+    "imgUrl": "https://example.com/bob.jpg",
+    "attendance": [
+      {"2024-03-01": "present"},
+     {"2024-03-05": "absent"},
+     {"2024-03-07": "present"},
+     {"2024-03-06": "present"}
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Eva Davis",
+    "imgUrl": "https://example.com/eva.jpg",
+    "attendance": [
+      {"2024-03-01": "present"},
+     {"2024-03-15": "absent"},
+     {"2024-03-07": "present"},
+     {"2024-03-06": "present"}
+    ]
+  }
+]
