@@ -7,7 +7,7 @@ import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
 import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import  "../Components/sidebar.css"
+import "../Components/sidebar.css"
 
 const routes = [
   {
@@ -32,34 +32,18 @@ const routes = [
   },
 ];
 const Sidebar = ({ children }) => {
-  const [isopen, setisopen] = useState(false);
-  const toggle = () => setisopen(!isopen);
-  const inputanimation = {
-    hidden: {
-      width: 0,
-      padding: 0,
-      opacity:0
-    },
-    show:{
-        width:"140px",
-        appding:"5px 15px",
-        opacity:1,
-        transition :{
-            duration:0.2
-        }
-
-    }
-  };
+  const [isopen, setisopen] = useState(true);
+  
   return (
     <div className="main-container">
       <motion.div
-        animate={{ width: isopen ? "200px" : "35px" }}
+        animate={{ width: "200px" }}
         className="sidebar"
       >
         <div className="top_section">
-          {isopen && <h1 className="logo">Do Some Coding</h1>}
+          {<h1 className="logo">Attendence</h1>}
           <div className="bars">
-            <FaBars onClick={toggle} />
+            <FaBars/>
           </div>
         </div>
         <div className="search">
@@ -67,7 +51,7 @@ const Sidebar = ({ children }) => {
             <BiSearch />
           </div>
           <AnimatePresence>
-            {isopen && <motion.input initial="hidden" animate="show" exit="hidden" variants = {inputanimation}placeholder="search..." />}
+            {<motion.input initial="show" animate="show" exit="hidden" placeholder="search..." />}
           </AnimatePresence>
         </div>
         <section className="routes">
